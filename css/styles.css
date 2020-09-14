@@ -1,0 +1,157 @@
+body {
+  background-color: #f8f8f8;
+  font-family: "Poppins";
+}
+
+.logo {
+  width:150px;
+  height: 45px;
+}
+
+.ending {
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+
+svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -250px;
+  margin-left: -400px;
+}
+
+input {
+  width: 90%;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 10px 10px 10px 5px;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  color: #2F3242;
+}
+
+textarea {
+  margin-left: 5px;
+  width: 90%;
+}
+
+select {
+  background: rgba(0, 0, 0, 0.0);
+  margin: 10px 10px 10px 5px;
+  border-radius: 4px;
+  padding: 3px 3px 3px 5px;
+}
+
+.message-box {
+  height: 200px;
+  width: 380px;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  margin-top: -100px;
+  margin-left: 50px;
+  color: #2F3242;
+  font-weight: 300;
+}
+
+.message-box h1 {
+  font-size: 60px;
+  line-height: 46px;
+  margin-bottom: 40px;
+}
+
+.buttons-con .action-link-wrap {
+  margin-top: 40px;
+}
+
+.buttons-con .action-link-wrap a {
+  background: rgba(0, 0, 0, 0.0);
+  padding: 8px 25px;
+  border-radius: 4px;
+  color: #2F3242;
+  font-weight: bold;
+  font-size: 14px;
+  transition: all 0.3s linear;
+  cursor: pointer;
+  text-decoration: none;
+  margin-right: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.buttons-con .action-link-wrap a:hover {
+  background: #e0e0e0;
+  color: #2F3242;
+}
+
+#Polygon-1, #Polygon-2, #Polygon-3, #Polygon-4, #Polygon-4, #Polygon-5 {
+  animation: float 1s infinite ease-in-out alternate;
+}
+
+#Polygon-2 {
+  animation-delay: .2s;
+}
+
+#Polygon-3 {
+  animation-delay: .4s;
+}
+
+#Polygon-4 {
+  animation-delay: .6s;
+}
+
+#Polygon-5 {
+  animation-delay: .8s;
+}
+
+@keyframes float {
+  100% {
+    transform: translateY(20px);
+  }
+}
+
+@media (max-width: 850px) {
+  .test {
+    display: flex;
+    justify-content: center;
+  }
+
+  svg {
+    position: relative;
+    top: 0%;
+    left: 0%;
+    width:385px;
+    height:auto;
+    margin-top: 0px;
+    margin-left: 0px;
+    
+  }
+  .message-box {
+    position: absolute;
+    top: 550px;
+    left: 50%;
+    margin-top: -100px;
+    margin-left: -190px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 385px) {
+  svg {
+    width:100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 0px;
+    margin-left: auto;
+  }
+  .message-box {
+    position: absolute;
+    top: 550px;
+    left: 50%;
+    margin-top: -100px;
+    margin-left: -190px;
+    text-align: center;
+  }
+}
